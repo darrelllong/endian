@@ -1,5 +1,5 @@
-#ifndef _ENDIAN_H
-#define _ENDIAN_H
+#pragma once
+
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -43,5 +43,3 @@ static inline uint64_t swap64(uint64_t x) {
   result |= (x & 0xFF00000000000000) >> 56;
   return result;
 }
-
-#endif
